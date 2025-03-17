@@ -5,11 +5,11 @@ import { User } from './User'
 import { DocumentType } from '@typegoose/typegoose'
 
 interface ContextData {
-    dbUser: DocumentType<User>,
+  dbUser: DocumentType<User>
 }
 
 interface SessionData {
-    language?: string,
+  language?: string
 }
 
 type Context = BaseContext & I18nFlavor & MenuFlavor & ContextData & SessionFlavor<SessionData>

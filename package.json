@@ -1,12 +1,17 @@
 {
   "name": "swiftsplitbot",
   "version": "1.0.0",
+  "type": "module",
   "main": "dist/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
     "start": "node dist/app.js",
-    "dev": "ts-node -r tsconfig-paths/register src/app.ts"
+    "dev": "ts-node -r tsconfig-paths/register src/app.ts",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "format:check": "prettier --check \"src/**/*.ts\""
   },
   "repository": {
     "type": "git",
@@ -21,6 +26,12 @@
   "homepage": "https://github.com/malroy89/SwiftSplitBot#readme",
   "description": "",
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.26.1",
+    "@typescript-eslint/parser": "^8.26.1",
+    "eslint": "^9.22.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "prettier": "^3.5.3",
     "ts-node": "^10.9.2",
     "tsconfig-paths": "^4.2.0",
     "typescript": "^5.8.2"
