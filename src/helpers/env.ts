@@ -6,6 +6,6 @@ import { resolve } from 'path'
 dotenv.config({ path: resolve(cwd(), '.env') })
 
 export default cleanEnv(process.env, {
-    TOKEN: str(),
-    MONGO: str(),
+  TOKEN: str(),
+  MONGO: str(),
 })
