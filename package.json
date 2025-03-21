@@ -1,7 +1,6 @@
 {
-  "name": "swiftsplitbot",
+  "name": "telegram-bot-template",
   "version": "1.0.0",
-  "type": "module",
   "main": "dist/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -15,15 +14,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/malroy89/SwiftSplitBot.git"
+    "url": "git+https://github.com/malroy89/telegram-bot-template.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/malroy89/SwiftSplitBot/issues"
+    "url": "https://github.com/malroy89/telegram-bot-template/issues"
   },
-  "homepage": "https://github.com/malroy89/SwiftSplitBot#readme",
+  "homepage": "https://github.com/malroy89/telegram-bot-template#readme",
   "description": "",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^8.26.1",
@@ -46,6 +45,7 @@
     "envalid": "^8.0.0",
     "grammy": "^1.35.0",
     "grammy-middlewares": "^1.0.11",
+    "module-alias": "^2.2.3",
     "mongoose": "^8.12.1"
   }
 }
